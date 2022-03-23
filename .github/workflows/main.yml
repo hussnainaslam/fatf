@@ -24,9 +24,9 @@ jobs:
         with:
           node-version: 12
       - name: Install Surge
-      - run: npm install -g surge
+      - run: npm install --global surge
       - name: Run Surge
-      - run: surge ./ fatf.surge.sh --token $ {{secrets.SURGE_TOKEN}} 
+      - run: surge ./ fatf1.surge.sh --token $ {{secrets.SURGE_TOKEN}} 
 
  
 
